@@ -14,6 +14,8 @@ class Main {
         String firstName = printFName("kyle");
         System.out.println(firstName);
 
+        System.out.println(firstName.substring(1, 2));
+
         // System.out.println("Hello World");
 
         // System.out.println(x);
