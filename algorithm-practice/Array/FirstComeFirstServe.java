@@ -31,16 +31,17 @@ public class FirstComeFirstServe {
                 takeoutIndex++;
             } else if ( dineinIndex < dinein.length && served[servedIndex] == dinein[dineinIndex] ) {
                 dineinIndex++;
+            } else {
+                return false;
             }
             servedIndex++;
         }
 
         if ( takeoutIndex == takeout.length && dineinIndex == dinein.length ) {
             return true;
-        } else {
-            return false;
-        }
-        
+        } 
+
+        return false;
     }
 
 
