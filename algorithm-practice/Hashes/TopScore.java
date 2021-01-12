@@ -23,11 +23,11 @@ class TopScore {
         for ( int score : scores) {
             scoreCounts[score]++;
         }
-
+        
         int[] sortedScores = new int[scores.length];
         int currentSortedIndex = 0;
 
-        for ( int score = highestPossibleScore; score >=0; score--) {
+        for ( int score = highestPossibleScore; score >= 0; score--) {
             int count = scoreCounts[score];
 
             for ( int occurence = 0; occurence < count; occurence++) {
