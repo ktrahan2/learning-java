@@ -12,10 +12,6 @@ import java.util.*;
 
 class TopScore {
 
-    // public Scores {
-
-    // }
-
     public static int[] sortScores(int[] scores, int highestPossibleScore) {
 
         int[] scoreCounts = new int[highestPossibleScore + 1];
